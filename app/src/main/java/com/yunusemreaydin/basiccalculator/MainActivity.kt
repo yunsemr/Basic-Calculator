@@ -18,7 +18,11 @@ class MainActivity : AppCompatActivity() {
         val textView =  findViewById<TextView>(R.id.result)
         val number1 = findViewById<EditText>(R.id.num1)
         val number2 = findViewById<EditText>(R.id.num2)
-        if(number1 != null && number2 != null){
+        val userInput1 = number1.text.toString()
+        val userInput2 = number2.text.toString()
+        val result1 = userInput1.toFloatOrNull()
+        val result2 = userInput2.toFloatOrNull()
+        if(result1 != null && result2 != null){
             val result = summation(number1.text.toString().toFloat(), number2.text.toString().toFloat()).toString()
             textView.text = result
         }else{
@@ -30,8 +34,11 @@ class MainActivity : AppCompatActivity() {
         val textView =  findViewById<TextView>(R.id.result)
         val number1 = findViewById<EditText>(R.id.num1)
         val number2 = findViewById<EditText>(R.id.num2)
-
-        if(number1 != null && number2 != null){
+        val userInput1 = number1.text.toString()
+        val userInput2 = number2.text.toString()
+        val result1 = userInput1.toFloatOrNull()
+        val result2 = userInput2.toFloatOrNull()
+        if(result1 != null && result2 != null){
             val result = subtraction(number1.text.toString().toFloat(), number2.text.toString().toFloat()).toString()
             textView.text = result
         }else{
@@ -43,7 +50,11 @@ class MainActivity : AppCompatActivity() {
         val textView =  findViewById<TextView>(R.id.result)
         val number1 = findViewById<EditText>(R.id.num1)
         val number2 = findViewById<EditText>(R.id.num2)
-        if(number1 != null && number2 != null){
+        val userInput1 = number1.text.toString()
+        val userInput2 = number2.text.toString()
+        val result1 = userInput1.toFloatOrNull()
+        val result2 = userInput2.toFloatOrNull()
+        if(result1 != null && result2 != null){
             val result = multiplication(number1.text.toString().toFloat(), number2.text.toString().toFloat()).toString()
             textView.text = result
         }else{
@@ -55,7 +66,11 @@ class MainActivity : AppCompatActivity() {
         val textView =  findViewById<TextView>(R.id.result)
         val number1 = findViewById<EditText>(R.id.num1)
         val number2 = findViewById<EditText>(R.id.num2)
-        if(number1 != null && number2 != null){
+        val userInput1 = number1.text.toString()
+        val userInput2 = number2.text.toString()
+        val result1 = userInput1.toFloatOrNull()
+        val result2 = userInput2.toFloatOrNull()
+        if(result1 != null && result2 != null){
             val result = division(number1.text.toString().toFloat(), number2.text.toString().toFloat()).toString()
             textView.text = result
         }else{
