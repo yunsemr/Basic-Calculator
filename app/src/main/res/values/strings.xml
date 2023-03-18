@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Basic Calculator</string>
+    <string name="give_a_number">Give a Number</string>
+    <string name="subs">-</string>
+    <string name="mult">x</string>
+    <string name="divs">/</string>
+    <string name="result">Result:</string>
+    <string name="sums">+</string>
+</resources>
